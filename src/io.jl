@@ -212,7 +212,7 @@ function save(data::Dataset, f::AbstractString)
     sz = open(f, "w") do io
         serialize(io, MemPool.MMWrap(data))
     end
-    load(f)
+    #load(f)
 end
 
 function _makerelative!(t, dir::AbstractString)
